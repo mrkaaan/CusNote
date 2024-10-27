@@ -21,7 +21,7 @@
 !w::Run C:\Program Files (x86)\WXWork\WXWork.exe
 
 ; 按下 Alt+D 打开顶顶
-!d::Run C:\Program Files (x86)\DingDing
+!d::Run C:\Program Files (x86)\DingDing\DingtalkLauncher.exe
 
 ;---------------------打开网址-------------------------
 ;kimi
@@ -29,7 +29,6 @@
 !k::
     Run, https://kimi.moonshot.cn/
 return
-
 
 ;鲁班
 ; Alt + NumPad0
@@ -49,15 +48,59 @@ return
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAzRNEplEHS96rWMcR8T?scode=ABsAQAckACEzUO8XukAUgAwQaNAOk&tab=BB08J2
 return
 
-; Alt + NumPad4
+; Alt + NumPad3
 ; 深圳产品
-!NumPad4::
+!NumPad3::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAi0oa07gjRrCTNTgq1E?scode=ABsAQAckACEQVh2eRJAUgAwQaNAOk&tab=BB08J2
 return
 
-; Alt + NumPad5
+; Alt + NumPad4
 ; 深圳快递
-!NumPad5::
+!NumPad6::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAKRXsV6t2SkOOj0FNI3?scode=ABsAQAckACEcASNeD6AUgAwQaNAOk&tab=j3wfob
 return
 
+;---------------------打开企业微信的对应群组-------------------------
+
+; 定义一个函数，用于执行一系列操作
+PerformAction(text) {
+    Send, !{w}  ; 模拟按下 Alt + W
+    Sleep, 100  ; 等待100毫秒
+
+    Send, ^{f}  ; 模拟按下 Ctrl + F
+    Sleep, 100  ; 等待100毫秒
+
+    Send, ^{a}  ; 模拟按下 Ctel + A
+    Sleep, 100  ; 等待100毫秒
+
+    Send, {delete}  ; 模拟按下 Ctel + A
+    Sleep, 100  ; 等待100毫秒
+
+    Send, %text%  ; 输入传入的文本
+    Sleep, 100  ; 等待100毫秒
+
+    Send, {Down}  ; 发送一次向下按钮
+    Sleep, 100  ; 等待100毫秒
+
+    Send, {Enter}  ; 模拟按下回车键
+}
+
+; Alt + NumPad 4
+!NumPad4::
+    PerformAction("chaozhoucang-yunda")
+return
+
+; Alt + NumPad 5
+!NumPad5::
+    PerformAction("shenzhencang-yunda")
+return
+
+; Alt + NumPad 7
+!NumPad7::
+    PerformAction("chaozhoucangku")
+return
+
+; Alt + NumPad 8
+!NumPad8::
+    PerformAction("shenzhencangk")
+return
