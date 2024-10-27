@@ -1,3 +1,29 @@
+; 开机自启 autostart1则自启，0则删除自启
+autostart:=1
+autostartLnk:=A_StartupCommon . "\任意给个名字.lnk"
+ 
+;----------auto start-------------
+if(autostart) ;如果开启开机自启动
+{
+    IfExist, % autostartLnk
+    {
+        FileGetShortcut, %autostartLnk%, lnkTarget
+        if(lnkTarget!=A_ScriptFullPath)
+            FileCreateShortcut, %A_ScriptFullPath%, %autostartLnk%, %A_WorkingDir%
+    }
+    else
+    {
+        FileCreateShortcut, %A_ScriptFullPath%, %autostartLnk%, %A_WorkingDir%
+    }
+}
+else
+{
+    IfExist, % autostartLnk
+    {
+        FileDelete, %autostartLnk%
+    }
+}
+
 ;------------------------解释----------------------------
 ; 是注释
 ; Ctrl 的符号是 ^ 
