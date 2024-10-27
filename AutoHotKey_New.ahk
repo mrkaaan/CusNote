@@ -1,0 +1,63 @@
+;------------------------解释----------------------------
+; 是注释
+; Ctrl 的符号是 ^ 
+; Alt 的符号是 ! 
+; Shift 的符号是 + 
+; Win 的符号是#
+
+;---------------------打开文件夹-------------------------
+;不能用数字键盘的数字，要用主键盘的数字。
+
+;打开文件夹project, Alt 3
+!1::Run, C:\work
+
+;打开文件夹project, Alt 3
+!2::Run, C:\note
+
+; 按下 Ctrl+Q 打开微信
+^q::Run, C:\Program Files\Tencent\WeChat\WeChat.exe
+
+; 按下 Alt+W 打开企业微信
+!w::Run C:\Program Files (x86)\WXWork\WXWork.exe
+
+; 按下 Alt+D 打开顶顶
+!d::Run C:\Program Files (x86)\DingDing
+
+;---------------------打开网址-------------------------
+;kimi
+; Alt + k
+!k::
+    Run, https://kimi.moonshot.cn/
+return
+
+
+;鲁班
+; Alt + NumPad0
+!NumPad0::
+    Run, https://order.lbdj.com/home/index
+return
+
+;潮州产品
+; Alt + NumPad1
+!NumPad1::
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAQOapIY2CRaecuUfa3u?scode=ABsAQAckACEybVpl1lAUEAuAZzALA&tab=ymfwzv
+return
+
+; 潮州快递
+; Alt + NumPad2
+!NumPad2::
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAzRNEplEHS96rWMcR8T?scode=ABsAQAckACEzUO8XukAUgAwQaNAOk&tab=BB08J2
+return
+
+; Alt + NumPad4
+; 深圳产品
+!NumPad4::
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAi0oa07gjRrCTNTgq1E?scode=ABsAQAckACEQVh2eRJAUgAwQaNAOk&tab=BB08J2
+return
+
+; Alt + NumPad5
+; 深圳快递
+!NumPad5::
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAKRXsV6t2SkOOj0FNI3?scode=ABsAQAckACEcASNeD6AUgAwQaNAOk&tab=j3wfob
+return
+
