@@ -91,7 +91,7 @@ return
 ; 定义一个函数，用于执行一系列操作
 PerformAction(text) {
     Send, !{w}  ; 模拟按下 Alt + W
-    Sleep, 100  ; 等待100毫秒
+    Sleep, 500  ; 等待100毫秒
 
     Send, ^{f}  ; 模拟按下 Ctrl + F
     Sleep, 100  ; 等待100毫秒
@@ -99,13 +99,23 @@ PerformAction(text) {
     Send, ^{a}  ; 模拟按下 Ctel + A
     Sleep, 100  ; 等待100毫秒
 
-    Send, {delete}  ; 模拟按下 Ctel + A
+    Send, {delete}  ; 模拟按下 Delete
+    Sleep, 100  ; 等待100毫秒
+
+    Send, {Shift down}  ; 按下Shift键
+    Sleep, 100  ; 等待一段时间
+    Send, {Shift up}  ; 释放Shift键
     Sleep, 100  ; 等待100毫秒
 
     Send, %text%  ; 输入传入的文本
     Sleep, 100  ; 等待100毫秒
 
-    Send, {Down}  ; 发送一次向下按钮
+    Send, {Shift down}  ; 按下Shift键
+    Sleep, 100  ; 等待一段时间
+    Send, {Shift up}  ; 释放Shift键
+    Sleep, 100  ; 等待100毫秒
+
+    Send, {Enter}  ; 发送一次向下按钮
     Sleep, 100  ; 等待100毫秒
 
     Send, {Enter}  ; 模拟按下回车键
