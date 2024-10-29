@@ -1,3 +1,6 @@
+# https://blog.csdn.net/Du_XiaoNan/article/details/136197235
+# pyautogui
+
 import pyautogui as pg
 import time
 
