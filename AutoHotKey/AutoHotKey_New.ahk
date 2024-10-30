@@ -80,10 +80,34 @@ return
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAi0oa07gjRrCTNTgq1E?scode=ABsAQAckACEQVh2eRJAUgAwQaNAOk&tab=BB08J2
 return
 
-; Alt + NumPad4
+; Alt + NumPad6
 ; 深圳快递
 !NumPad6::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAKRXsV6t2SkOOj0FNI3?scode=ABsAQAckACEcASNeD6AUgAwQaNAOk&tab=j3wfob
+return
+
+; Alt + NumPad9
+; 多乐
+!NumPad9::
+    Run, https://www.kdocs.cn/l/coVsIfiNhaqN
+return
+
+; Alt + NumPadDiv /
+; 银宾
+!NumPadDiv::
+    Run, https://www.kdocs.cn/l/cbyYlnoIbKtX
+return
+
+; Alt + NumPadMul *
+; 罗刚
+!NumPadMult::
+    Run, https://www.kdocs.cn/l/ctLqaUf1xH6O
+return
+
+; Alt + N
+; 苏宁 已卖出的宝贝 界面
+!N::
+    Run, https://myseller.taobao.com/home.htm/trade-platform/tp/sold
 return
 
 ;---------------------打开企业微信的对应群组-------------------------
@@ -121,22 +145,39 @@ PerformAction(text) {
     Send, {Enter}  ; 模拟按下回车键
 }
 
+; 仓库 潮州
 ; Alt + NumPad 4
 !NumPad4::
-    PerformAction("chaozhoucang-yunda")
-return
-
-; Alt + NumPad 5
-!NumPad5::
-    PerformAction("shenzhencang-yunda")
-return
-
-; Alt + NumPad 7
-!NumPad7::
     PerformAction("chaozhoucangku")
 return
 
-; Alt + NumPad 8
-!NumPad8::
+; 快递 潮州 
+; Alt + NumPad 5
+!NumPad5::
+    PerformAction("chaozhoucang-yunda")
+return
+
+; 仓库 深圳
+; Alt + NumPad 7
+!NumPad7::
     PerformAction("shenzhencangk")
 return
+
+; 快递 深圳
+; Alt + NumPad 8
+!NumPad8::
+    PerformAction("shenzhencang-yunda")
+return
+
+; 提问群
+; Alt + NumPad Add + 
+!NumPadAdd::
+    PerformAction("jiaopengkefurichang")
+return
+
+; 发错货
+; Alt + NumPad Sub - 
+!NumPadSub::
+    PerformAction("facuohuo")
+return
+
