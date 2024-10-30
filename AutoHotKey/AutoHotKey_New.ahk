@@ -92,6 +92,24 @@ return
     Run, https://www.kdocs.cn/l/coVsIfiNhaqN
 return
 
+; Alt + NumPadDiv /
+; 银宾
+!NumPadDiv::
+    Run, https://www.kdocs.cn/l/cbyYlnoIbKtX
+return
+
+; Alt + NumPadMul *
+; 罗刚
+!NumPadMult::
+    Run, https://www.kdocs.cn/l/ctLqaUf1xH6O
+return
+
+; Alt + N
+; 苏宁 已卖出的宝贝 界面
+!N::
+    Run, https://myseller.taobao.com/home.htm/trade-platform/tp/sold
+return
+
 ;---------------------打开企业微信的对应群组-------------------------
 
 ; 定义一个函数，用于执行一系列操作
@@ -151,4 +169,15 @@ return
     PerformAction("shenzhencang-yunda")
 return
 
+; 提问群
+; Alt + NumPad Add + 
+!NumPadAdd::
+    PerformAction("jiaopengkefurichang")
+return
+
+; 发错货
+; Alt + NumPad Sub - 
+!NumPadSub::
+    PerformAction("facuohuo")
+return
 
