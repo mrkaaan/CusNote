@@ -3,10 +3,11 @@ from pywinauto.application import Application
 # https://blog.csdn.net/shawpan/article/details/78170117
 # ----------------- 打开应用 -----------------
 # 打开制定应用
-app = Application(backend="uia").start("notepad.exe")
+# app = Application(backend="uia").start("notepad.exe")
 
 # 打开任意应用程序
 # app = Application(backend="uia").start(r"文件路径")
+# app = Application(backend="uia").start(r"C:\Program Files (x86)\旺店通ERP\旺店通ERP.exe")
 
 # ----------------- 不确定哪种模式 -----------------
 
@@ -26,11 +27,14 @@ app = Application(backend="uia").start("notepad.exe")
 # 窗口句柄连接
 # app = Application(backend="uia").connect(handle=1234)
 
+app = Application(backend="win32").connect(handle=1641880)
+
 # ----------------- 选择已打开应用 -----------------
 
 # 方式一 app["类名/标题"]   推荐使用
 # 类名选择窗口
-dlg = app["类名"]
+# dlg = app["类名"]
+dlg = app["CoolWindow"]
 
 # 窗口标题选择窗口
 # dlg = app["窗口标题"]
@@ -47,19 +51,21 @@ dlg = app["类名"]
 dlg.maximize()
 
 # 最小化
-dlg.minimize()
+# dlg.minimize()
 
 # 还原
-dlg.restore()
+# dlg.restore()
 
 # 关闭
-dlg.close()
+# dlg.close()
 
 # 查看窗口显示状态
-status = dlg.get_show_state() # 1最大化 0正常
+# status = dlg.get_show_state() # 1最大化 0正常
+# print(status)
 
 # 获取当前窗口显示坐标
-rect = dlg.rectangle() # (L, T, R, B) 从上到下，从左到右 依次距离屏幕左上角的距离
+# rect = dlg.rectangle() # (L, T, R, B) 从上到下，从左到右 依次距离屏幕左上角的距离
+# print(rect)
 
 # ----------------- 窗口控件选择 -----------------
 
