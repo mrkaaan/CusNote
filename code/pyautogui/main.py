@@ -141,7 +141,7 @@ import os
 # -------------------------  截图 -------------------------
 
 # 设置截图的相对路径
-relative_path = "python_2024/all.png"
+# relative_path = "python_2024/all.png"
 # 获取当前工作目录
 # current_dir = os.getcwd()
 # 构建绝对路径
