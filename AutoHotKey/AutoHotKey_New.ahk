@@ -116,6 +116,24 @@ return
     Run, https://myseller.taobao.com/home.htm/trade-platform/tp/sold
 return
 
+; Alt + M
+; 支付宝返款登记表
+!M::
+    Run, https://kdocs.cn/l/cbYW6GJBCfjo
+return
+
+; Alt + M
+; 支付宝返款登记表
+!M::
+    Run, https://kdocs.cn/l/cbYW6GJBCfjo
+return
+
+; Alt + L
+; 拆件表
+; !M::
+;     Run, 
+; return
+
 ;---------------------打开企业微信的对应群组-------------------------
 
 ; 定义一个函数，用于执行一系列操作
