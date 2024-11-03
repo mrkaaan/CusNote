@@ -37,3 +37,7 @@ Miniconda需要python312版本
 conda env create -f environment.yml
 conda activate gui
 
+#--------------------
+代理问题
+
+https://cloud.tencent.com/developer/article/2405656

@@ -122,12 +122,6 @@ return
     Run, https://kdocs.cn/l/cbYW6GJBCfjo
 return
 
-; Alt + M
-; 支付宝返款登记表
-!M::
-    Run, https://kdocs.cn/l/cbYW6GJBCfjo
-return
-
 ; Alt + L
 ; 拆件表
 ; !M::
