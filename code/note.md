@@ -45,9 +45,15 @@ https://cloud.tencent.com/developer/article/2405656
 #--------------------
 
 conda
-
+基础教程
 https://www.bilibili.com/read/cv8956636/
+conda代理
 https://blog.csdn.net/sinat_27953939/article/details/134793098
+
+CMD下初始化命令
+conda config --set show_channel_urls yes
+C盘用户目录下代理配置文件名
+.condarc
 
 conda clean -i # 清除索引缓存，重新搜索包
 conda info -e # 查看已创建的环境
