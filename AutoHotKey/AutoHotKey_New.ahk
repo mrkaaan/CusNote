@@ -184,7 +184,7 @@ return
 ; 快递 深圳
 ; Alt + NumPad 8
 !NumPad8::
-    PerformAction("shenzhencang-yunda")
+    PerformAction("shenzhencangchaojie")
 return
 
 ; 提问群
