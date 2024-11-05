@@ -49,6 +49,8 @@ conda
 https://www.bilibili.com/read/cv8956636/
 conda代理
 https://blog.csdn.net/sinat_27953939/article/details/134793098
+另一个教程
+https://sazerac-kk.github.io/p/%E6%95%99%E7%A8%8Bvscode-anaconda%E9%85%8D%E7%BD%AEpython%E7%8E%AF%E5%A2%83
 
 CMD下初始化命令
 conda config --set show_channel_urls yes
@@ -56,7 +58,10 @@ C盘用户目录下代理配置文件名
 .condarc
 
 conda clean -i # 清除索引缓存，重新搜索包
+
 conda info -e # 查看已创建的环境
+conda env list # 查看已创建的环境 新版
+
 conda list # 查看已安装的包
 
 conda create --name 环境明 包名=版本号 # 创建环境 缩写-n
@@ -85,3 +90,11 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r env
 2 手动安装pip包 关代理
 pip install colorama==0.4.6 keyboard==0.13.5 loguru==0.7.2 mouseinfo==0.1.3 numpy==1.24.4 opencv-python==4.8.1.78 pillow==10.1.0 pyautogui==0.9.54 pygetwindow==0.0.9 pymsgbox==1.0.9 pyperclip==1.8.2 pypiwin32==223 pyrect==0.2.0 pyscreeze==0.1.30 pytweening==1.0.7 pywin32==306 win32-setctime==1.1.0
 
+# -------
+
+conda 报错
+
+## ImportError: cannot import name '_pyautogui_win' from partially initialized module 'pyautogui' (most likely due to a circular import)
+
+在 VScode 的状态栏中，确保激活的 Python 环境是 gui 环境。
+按 Ctrl+Shift+P（或 Cmd+Shift+P，在 macOS 上），搜索并选择 Python: Select Interpreter。
