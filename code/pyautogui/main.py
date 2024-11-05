@@ -68,7 +68,7 @@ import os
 #单击
 #button:默认左键，左键 left，右键 right,中键 middle
 #clicks:点击次数，默认是1次
-#interval:每次点击间隔时间，默认是0
+#interval:每次点击间隔时间，默认是0 优先级高于pyautogui.PAUSE
 #duration:持续时间，默认是0
 # pg.click(x=90, y=100,clicks=2,interval=0,duration=0, button='left')
 # 双击
