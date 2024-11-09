@@ -68,29 +68,30 @@ return
     Run, https://order.lbdj.com/home/index
 return
 
-;潮州产品
+;潮州仓库产品问题
 ; Alt + NumPad1
 !NumPad1::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAHJozL8lnScKkKV7Vfj?scode=ABsAQAckACED1n74eSAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAVylJxunsTwuCJbyyFq?scode=ABsAQAckACEroGgpYHAUEAuAZzALA&tab=BB08J2
 return
 
-; 潮州快递
+; 潮州仓库快递问题
 ; Alt + NumPad2
 !NumPad2::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAHJozL8lnScKkKV7Vfj?scode=ABsAQAckACED1n74eSAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad3
-; 深圳产品
+; 深圳仓库产品问题
 !NumPad3::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAWORIPnieQwSk8hCYql?scode=ABsAQAckACEWJ0uKoTAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAw51yfp5PRPSIDoC1C5?scode=ABsAQAckACEWu4yiMUAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad6
-; 深圳快递
+; 深圳仓库快递问题
 !NumPad6::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAw51yfp5PRPSIDoC1C5?scode=ABsAQAckACEWu4yiMUAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAWORIPnieQwSk8hCYql?scode=ABsAQAckACEWJ0uKoTAUEAuAZzALA&tab=BB08J2
 return
+
 
 ; Alt + NumPad9
 ; 多乐
@@ -199,3 +200,7 @@ return
     PerformAction("facuohuo")
 return
 
+
+; 先潮州 再深圳
+; 问题表格 1产品2快递 3产品6快递
+; 群 4仓库5快递 7仓库8快递
