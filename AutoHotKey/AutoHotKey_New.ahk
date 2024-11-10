@@ -124,10 +124,10 @@ return
 return
 
 ; Alt + L
-; 拆件表
-; !M::
-;     Run, 
-; return
+; 查快递
+!L::
+    Run, https://www.kuaidi100.com
+return
 
 ;---------------------打开企业微信的对应群组-------------------------
 
