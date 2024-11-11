@@ -204,3 +204,15 @@ return
 ; 先潮州 再深圳
 ; 问题表格 1产品2快递 3产品6快递
 ; 群 4仓库5快递 7仓库8快递
+
+; Alt + [
+; 潮洁开票
+![::
+    PerformAction("chaojiedianpukai")
+return
+
+; Alt + ]
+; 余猫开票
+!]::
+    PerformAction("yumaodianpukai")
+return
