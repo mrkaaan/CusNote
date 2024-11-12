@@ -50,7 +50,7 @@ else
 ^q::Run, C:\Program Files\Tencent\WeChat\WeChat.exe
 
 ; 按下 Alt+W 打开企业微信
-!w::Run C:\Program Files (x86)\WXWork\WXWork.exe
+!q::Run C:\Program Files (x86)\WXWork\WXWork.exe
 
 ; 按下 Alt+D 打开顶顶
 !d::Run C:\Program Files (x86)\DingDing\DingtalkLauncher.exe
@@ -133,7 +133,7 @@ return
 
 ; 定义一个函数，用于执行一系列操作
 PerformAction(text) {
-    Send, !{w}  ; 模拟按下 Alt + W
+    Send, !{q}  ; 模拟按下 Alt + W
     Sleep, 500  ; 等待100毫秒
 
     Send, ^{f}  ; 模拟按下 Ctrl + F
