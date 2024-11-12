@@ -311,4 +311,31 @@ spp3 安装方式一样
 
 nmj 纳米胶拆
 
+xzz 旋转挂钩
+
+js4 拒收不用垫付运费
+
+qxx 34 塞子清洁头发
+
+fpp 填信息发票
+
+skk4 付款给截图
+
+wal 粘贴墙面
+
+ggg del
+gggg del
+
+doo 掉落
+drr 免钉胶干
+
+zzz 售前的 不用了
+zz 转接头主用话术
+zk 转接头 没事找事
+ztt 用转接头了吗
+
+bbf del
+bff 补发相关
+bii 补发时间相关
+
 
