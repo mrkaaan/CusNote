@@ -1,3 +1,4 @@
+; 无用 + 中文问题无法解决 弃用
 
 ;---------------------快捷发送文件-------------------------
 ;------------------------解释----------------------------
@@ -7,72 +8,21 @@
 ; Shift 的符号是 + 
 ; Win 的符号是#
 
+#NoEnv  ; 排除环境变量
+SendMode Input  ; 使用输入模式发送按键
+SetWorkingDir %A_ScriptDir%  ; 设置工作目录为脚本目录
 
-#Persistent
-#SingleInstance, force
-
-; 定义快捷短语和对应的文件路径
-::pic1::  ; 当输入pic1并按空格时
-ClipSaved := ClipboardAll  ; 保存整个剪贴板内容
-Clipboard =  ; 清空剪贴板
-imageUtil.gdiplusStartup()
-pBitmap := imageUtil.from_file("d:\test.png")  ; 替换为您的图片路径
-if (pBitmap) {
-    imageUtil.put_file(pBitmap, "Clipboard")  ; 将图片复制到剪贴板
-}
-imageUtil.gdiplusShutdown()
-Clipboard := ClipSaved  ; 恢复剪贴板内容
-return
-
-::vid1::  ; 当输入vid1并按空格时
-MsgBox, Video files cannot be copied to clipboard directly.
-return
-
-Class imageUtil {
-    static gdiplusToken
-    gdiplusStartup() {
-        if (!gdiplusToken) {
-            Gdip_Startup(gdiplusToken)
-        }
-    }
-    gdiplusShutdown() {
-        if (gdiplusToken) {
-            Gdip_Shutdown(gdiplusToken)
-            gdiplusToken := ""
-        }
-    }
-    from_file(filePath) {
-        if (!FileExist(filePath)) {
-            return 0
-        }
-        hBitmap := 0
-        DllCall("Gdiplus\GdipLoadImageFromFile", "str", filePath, "ptr*", hBitmap)
-        if (hBitmap) {
-            DllCall("Gdiplus\GdipCreateBitmapFromImage", "ptr", hBitmap, "ptr*", pBitmap)
-            DllCall("Gdiplus\GdipDisposeImage", "ptr", hBitmap)
-            return pBitmap
-        }
-        return 0
-    }
-    put_file(pBitmap, clipType) {
-        if (clipType = "Clipboard") {
-            DllCall("OpenClipboard", "ptr", 0)
-            DllCall("EmptyClipboard")
-            DllCall("Gdiplus\GdipGetHBITMAPFromBitmap", "ptr", pBitmap, "ptr*", hBitmap, "uint", 0)
-            DllCall("SetClipboardData", "uint", 2, "ptr", hBitmap)
-            DllCall("CloseClipboard")
-            DllCall("Gdiplus\GdipDisposeImage", "ptr", pBitmap)
-        }
-    }
-}
-
-; 检测剪贴板变化
-OnClipboardChange:
+; 定义一个函数，将文件路径复制到剪贴板
+SetFileToClipboard(filePath)
 {
-    if (A_EventInfo = 2) { ; 剪贴板中包含图片
-        ClipboardIsPic := true
-    } else {
-        ClipboardIsPic := false
-    }
-    return
+    RunWait, powershell -sta "$sc=New-Object System.Collections.Specialized.StringCollection; $sc.Add('" . filePath . "'); Add-Type -Assembly 'System.Windows.Forms'; [System.Windows.Forms.Clipboard]::SetFileDropList($sc)"
 }
+
+; 设置热字符串
+::test1::  ; 当输入 "test1" 后跟一个空格时
+    SetFileToClipboard("C:\test.png")  ; 替换为实际的文件路径
+return
+
+::test2::  ; 当输入 "test2" 后跟一个空格时
+    SetFileToClipboard("C:\Users\Kan\Documents\Captura\2024-11-15-11-50-10.mp4")  ; 替换为实际的文件路径
+return
