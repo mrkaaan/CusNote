@@ -167,37 +167,37 @@ PerformAction(text) {
 ; 仓库 潮州
 ; Alt + NumPad 4
 !NumPad4::
-    PerformAction("chaozhoucangku")
+    PerformAction("zhoucangk")
 return
 
 ; 快递 潮州 
 ; Alt + NumPad 5
 !NumPad5::
-    PerformAction("chaozhoucang-yunda")
+    PerformAction("cang-y")
 return
 
 ; 仓库 深圳
 ; Alt + NumPad 7
 !NumPad7::
-    PerformAction("shenzhencangk")
+    PerformAction("zhencangk")
 return
 
 ; 快递 深圳
 ; Alt + NumPad 8
 !NumPad8::
-    PerformAction("shenzhencangchaojie")
+    PerformAction("zhencangc")
 return
 
 ; 提问群
 ; Alt + NumPad Add + 
 !NumPadAdd::
-    PerformAction("jiaopengkefurichang")
+    PerformAction("kefur")
 return
 
 ; 发错货
 ; Alt + NumPad Sub - 
 !NumPadSub::
-    PerformAction("facuohuo")
+    PerformAction("cuoh")
 return
 
 
@@ -208,11 +208,11 @@ return
 ; Alt + [
 ; 潮洁开票
 ![::
-    PerformAction("chaojiedianpukai")
+    PerformAction("jied")
 return
 
 ; Alt + ]
 ; 余猫开票
 !]::
-    PerformAction("yumaodianpukai")
+    PerformAction("maod")
 return
