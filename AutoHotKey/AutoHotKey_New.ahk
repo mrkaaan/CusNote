@@ -111,12 +111,6 @@ return
     Run, https://www.kdocs.cn/l/ctLqaUf1xH6O
 return
 
-; Alt + N
-; 苏宁 已卖出的宝贝 界面
-!N::
-    Run, https://myseller.taobao.com/home.htm/trade-platform/tp/sold
-return
-
 ; Alt + M
 ; 支付宝返款登记表
 !M::
@@ -127,6 +121,24 @@ return
 ; 查快递
 !L::
     Run, https://www.kuaidi100.com
+return
+
+; Alt + ;
+; 打开潮州拆建群
+!;::
+    Run, https://www.kdocs.cn/l/cpIw6wSo327f
+return
+
+; Alt + '
+; 打开深圳拆建群
+!'::
+    Run, https://www.kdocs.cn/l/cv9FaonW5wT8
+return
+
+; Alt + /
+; 打开傲迪厂家表
+!/::
+    Run, https://kdocs.cn/l/cg5wsAF4SaL6
 return
 
 ;---------------------打开企业微信的对应群组-------------------------
