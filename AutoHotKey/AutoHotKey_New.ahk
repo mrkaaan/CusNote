@@ -212,6 +212,11 @@ return
     PerformAction("cuoh")
 return
 
+; 中通群
+; Alt + NumPad del
+!NumPadDel::
+    PerformAction("zhongt")
+return
 
 ; 先潮州 再深圳
 ; 问题表格 1产品2快递 3产品6快递
