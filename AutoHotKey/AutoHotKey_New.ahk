@@ -111,6 +111,12 @@ return
     Run, https://www.kdocs.cn/l/ctLqaUf1xH6O
 return
 
+; Alt + NumPad Sub - 
+; 打开傲迪厂家表
+!NumPadSub::
+    Run, https://kdocs.cn/l/cg5wsAF4SaL6
+return
+
 ; Alt + M
 ; 支付宝返款登记表
 !M::
@@ -135,11 +141,6 @@ return
     Run, https://www.kdocs.cn/l/cv9FaonW5wT8
 return
 
-; Alt + /
-; 打开傲迪厂家表
-!/::
-    Run, https://kdocs.cn/l/cg5wsAF4SaL6
-return
 
 ;---------------------打开企业微信的对应群组-------------------------
 
@@ -200,16 +201,10 @@ return
     PerformAction("zhencangc")
 return
 
-; 提问群
+; 售后部门群 苏宁同意退款用
 ; Alt + NumPad Add + 
 !NumPadAdd::
-    PerformAction("kefur")
-return
-
-; 发错货
-; Alt + NumPad Sub - 
-!NumPadSub::
-    PerformAction("cuoh")
+    PerformAction("jie-shou")
 return
 
 ; 中通群
@@ -218,6 +213,7 @@ return
     PerformAction("zhongt")
 return
 
+; 总结快速打开企业微信指定群聊的键盘按键顺序规律：
 ; 先潮州 再深圳
 ; 问题表格 1产品2快递 3产品6快递
 ; 群 4仓库5快递 7仓库8快递
