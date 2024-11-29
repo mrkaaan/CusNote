@@ -68,45 +68,45 @@ return
     Run, https://order.lbdj.com/home/index
 return
 
-;潮州仓库产品问题
+;潮州仓库产品问题表
 ; Alt + NumPad1
 !NumPad1::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAVylJxunsTwuCJbyyFq?scode=ABsAQAckACEroGgpYHAUEAuAZzALA&tab=BB08J2
 return
 
-; 潮州仓库快递问题
+; 潮州仓库快递问题表
 ; Alt + NumPad2
 !NumPad2::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAHJozL8lnScKkKV7Vfj?scode=ABsAQAckACED1n74eSAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad3
-; 深圳仓库产品问题
+; 深圳仓库产品问题表
 !NumPad3::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAw51yfp5PRPSIDoC1C5?scode=ABsAQAckACEWu4yiMUAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad6
-; 深圳仓库快递问题
+; 深圳仓库快递问题表
 !NumPad6::
     Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAWORIPnieQwSk8hCYql?scode=ABsAQAckACEWJ0uKoTAUEAuAZzALA&tab=BB08J2
 return
 
 
 ; Alt + NumPad9
-; 多乐
+; 多乐表
 !NumPad9::
     Run, https://www.kdocs.cn/l/coVsIfiNhaqN
 return
 
 ; Alt + NumPadDiv /
-; 银宾
+; 银宾表
 !NumPadDiv::
     Run, https://www.kdocs.cn/l/cbyYlnoIbKtX
 return
 
 ; Alt + NumPadMul *
-; 罗刚
+; 罗刚表
 !NumPadMult::
     Run, https://www.kdocs.cn/l/ctLqaUf1xH6O
 return
