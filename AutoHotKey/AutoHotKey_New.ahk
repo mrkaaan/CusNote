@@ -71,25 +71,25 @@ return
 ;潮州仓库产品问题表
 ; Alt + NumPad1
 !NumPad1::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAVylJxunsTwuCJbyyFq?scode=ABsAQAckACEroGgpYHAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAab8WhsniTlGZuKlHLb?scode=ABsAQAckACEDQwCAKDAUEAuAZzALA&tab=BB08J2
 return
 
 ; 潮州仓库快递问题表
 ; Alt + NumPad2
 !NumPad2::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAHJozL8lnScKkKV7Vfj?scode=ABsAQAckACED1n74eSAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAZx1ER04sSQ6Qrm9tTs?scode=ABsAQAckACEDNUGAiMAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad3
 ; 深圳仓库产品问题表
 !NumPad3::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAw51yfp5PRPSIDoC1C5?scode=ABsAQAckACEWu4yiMUAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAhN11AIAqTMKhce1b7C?scode=ABsAQAckACEsuVpBjOAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad6
 ; 深圳仓库快递问题表
 !NumPad6::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAWORIPnieQwSk8hCYql?scode=ABsAQAckACEWJ0uKoTAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAMNA07VitSFqXPnAqKo?scode=ABsAQAckACE9NK1KnJAUEAuAZzALA&tab=BB08J2
 return
 
 
