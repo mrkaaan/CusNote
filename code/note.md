@@ -98,3 +98,11 @@ conda 报错
 
 在 VScode 的状态栏中，确保激活的 Python 环境是 gui 环境。
 按 Ctrl+Shift+P（或 Cmd+Shift+P，在 macOS 上），搜索并选择 Python: Select Interpreter。
+
+# -------
+
+输入法工具
+
+https://www.appinn.com/inputtip-abgox/
+
+https://inputtip.pages.dev/download/
