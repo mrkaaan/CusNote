@@ -68,34 +68,28 @@ return
     Run, https://order.lbdj.com/home/index
 return
 
-; 定义潮州和深圳仓库以及快递表格变量存储链接
-url_chaozhou_product := "https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAab8WhsniTlGZuKlHLb?scode=ABsAQAckACEDQwCAKDAUEAuAZzALA&tab=BB08J2"
-url_chaozhou_express := "https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAZx1ER04sSQ6Qrm9tTs?scode=ABsAQAckACEDNUGAiMAUEAuAZzALA&tab=BB08J2"
-url_shenzhen_product := "https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAhN11AIAqTMKhce1b7C?scode=ABsAQAckACEsuVpBjOAUEAuAZzALA&tab=BB08J2"
-url_shenzhen_express := "https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAMNA07VitSFqXPnAqKo?scode=ABsAQAckACE9NK1KnJAUEAuAZzALA&tab=BB08J2"
-
-; 潮州仓库产品问题表
+;潮州仓库产品问题表
 ; Alt + NumPad1
 !NumPad1::
-    Run, %url_chaozhou_product%
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAab8WhsniTlGZuKlHLb?scode=ABsAQAckACEDQwCAKDAUEAuAZzALA&tab=BB08J2
 return
 
 ; 潮州仓库快递问题表
 ; Alt + NumPad2
 !NumPad2::
-    Run, %url_chaozhou_express%
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAZx1ER04sSQ6Qrm9tTs?scode=ABsAQAckACEDNUGAiMAUEAuAZzALA&tab=BB08J2
 return
 
-; 深圳仓库产品问题表
 ; Alt + NumPad3
+; 深圳仓库产品问题表
 !NumPad3::
-    Run, %url_shenzhen_product%
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAhN11AIAqTMKhce1b7C?scode=ABsAQAckACEsuVpBjOAUEAuAZzALA&tab=BB08J2
 return
 
-; 深圳仓库快递问题表
 ; Alt + NumPad6
+; 深圳仓库快递问题表
 !NumPad6::
-    Run, %url_shenzhen_express%
+    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAMNA07VitSFqXPnAqKo?scode=ABsAQAckACE9NK1KnJAUEAuAZzALA&tab=BB08J2
 return
 
 
