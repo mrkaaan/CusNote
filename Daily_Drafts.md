@@ -18,7 +18,6 @@ autohotkey 快捷键
 呼出已经打开的网页
 鼠标侧键代替ctrl
 
-快捷复制用户名
 自动ERP 固定位置
 
 如何快捷复制苏宁的物流
@@ -51,11 +50,7 @@ Tcl_AsyncDelete: async handler deleted by the wrong thread
 
 把链接加在话术后面
 
-做五通图 新老款对比
-
-做法兰圈套装图 金属的
-
-胶泥混发图
+自动发差价复制bug修复
 
 
 ## 物流位置
