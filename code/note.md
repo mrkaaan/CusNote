@@ -106,3 +106,41 @@ conda 报错
 https://www.appinn.com/inputtip-abgox/
 
 https://inputtip.pages.dev/download/
+
+# -------
+
+前端插件
+
+HTML Snippets 智能提示HTML标签，以及标签含义
+
+JavaScript(ES6) code snippets 语法ES6智能提示，以及快速输入
+
+Auto Rename Tag 自动完成另一侧标签的同步修改
+
+Live Server 实时开发服务器插件
+
+ESLint 用于JavaScript开发的静态代码检查工具
+
+Auto Import 实现编写代码时自动导入所需的模块或组件
+
+Path Intellisense 增强路径智能感知能力，书写相对或绝对路径时自动列出并补全项目内的文件和目录
+
+# -------
+
+手写一个可以在多个浏览器之前通信的插件
+
+谷歌浏览器插件基础教程
+https://blog.csdn.net/weixin_45491473/article/details/139421752
+
+谷歌浏览器多开教程
+https://zhuanlan.zhihu.com/p/6598046588
+
+Node.js后端服务器：负责接收来自各个浏览器扩展的内容脚本的消息，并存储检测到的元素信息。同时，它也向浏览器扩展提供检测到的元素信息。
+
+浏览器扩展的内容脚本：在每个浏览器标签页中运行，负责检测特定元素，并将其信息发送给Node.js后端服务器。
+
+浏览器扩展的后台脚本：作为Node.js后端服务器与内容脚本之间的桥梁，负责接收内容脚本的消息并转发给后端服务器，以及从后端服务器获取检测到的元素信息并提供给悬浮窗。
+
+浏览器扩展的悬浮窗：提供一个用户界面，显示所有检测到的元素信息，并允许用户点击这些信息以激活对应的浏览器标签页。
+
+

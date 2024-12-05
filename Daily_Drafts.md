@@ -52,6 +52,9 @@ Tcl_AsyncDelete: async handler deleted by the wrong thread
 
 自动发差价复制bug修复
 
+限制快捷键在指定软件生效
+切换前置窗口的时候判断
+
 
 ## 物流位置
 
