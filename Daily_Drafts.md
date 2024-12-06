@@ -52,6 +52,12 @@ Tcl_AsyncDelete: async handler deleted by the wrong thread
 
 自动发差价复制bug修复
 
+设置侧键 up down
+
+分离两个列表的备注
+
+tbb
+上门取件会自动抵扣，自行寄回就是退货退款成功之后平台赔付，可以改一下
 
 ## 物流位置
 
