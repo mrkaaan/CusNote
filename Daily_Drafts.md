@@ -58,6 +58,9 @@ Tcl_AsyncDelete: async handler deleted by the wrong thread
 
 tbb
 上门取件会自动抵扣，自行寄回就是退货退款成功之后平台赔付，可以改一下
+限制快捷键在指定软件生效
+切换前置窗口的时候判断
+
 
 ## 物流位置
 
