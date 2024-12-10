@@ -91,7 +91,7 @@ def manage_config_json(directory, mode='new', strictness=1):
         if mode == 'new' or entry not in data:
             data.append(entry)
 
-    with open(config_path, 'w') as file:
+    with open(config_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
     print(f"成功生成 {config_path}")
@@ -211,7 +211,6 @@ def json_to_xlsx(json_path, output_path=None):
     df.to_excel(output_file, index=False)
     print(f"成功创建 {output_file}")
 
-import shutil
 
 def copy_json_files(json_path, target_dir):
     """将JSON中的文件复制到指定目录"""
@@ -225,6 +224,8 @@ def copy_json_files(json_path, target_dir):
     
     seen_files = set()
     failed_copies = []
+
+    print(f"目标目录: {target_dir}")  # 打印目标目录
 
     for key, value in data.items():
         # 检查key是否包含中文字符
@@ -242,6 +243,7 @@ def copy_json_files(json_path, target_dir):
             
             try:
                 if source_file.exists():
+                    print(f"复制文件: {source_file} 到 {target_dir}")  # 打印正在复制的文件和目标目录
                     shutil.copy2(source_file, target_dir)
                 else:
                     failed_copies.append(str(source_file))
@@ -255,15 +257,16 @@ def copy_json_files(json_path, target_dir):
             print(failed_copy)
 
 
+
 if __name__ == '__main__':
 
     # 根据表格生成EmotionConfig.json文件
-    dir_path = r'C:\Users\kan\Desktop\全部表情包'
-    group_name = 'test'
+    dir_path = r'C:\Users\A\Desktop\CustomEmo'
+    group_name = 'CustomEmo'
 
     print("开始执行")
-    # success_flag = manage_config_json(f'{dir_path}\\{group_name}', mode='new', strictness=2)
-    success_flag = False
+    success_flag = manage_config_json(f'{dir_path}\\{group_name}', mode='new', strictness=2)
+    # success_flag = False
     if success_flag:
         # 从后往前查找最后一个反斜杠的索引
         last_backslash_index = dir_path.rfind('\\')
@@ -278,8 +281,8 @@ if __name__ == '__main__':
 
     
     # 将handles.json转换为output.xlsx文件
-    json_to_xlsx(r'D:\projects\auto_customer\config\hotstrings_cn.json')
+    # json_to_xlsx(r'C:\note\python-WinGUI\config\hotstrings_cn.json')
 
     
     # 将handles.json中的文件复制到指定目录
-    # copy_json_files('C:\\path\\to\\your\\file.json', 'C:\\path\\to\\target\\folder')
+    # copy_json_files(r'C:\note\python-WinGUI\config\hotstrings_cn.json', r'C:\Users\A\Desktop\CustomEmo\CustomEmo')
