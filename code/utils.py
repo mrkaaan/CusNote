@@ -1,3 +1,9 @@
+'''
+千牛工作台的表情包分组导出为emo格式，emo后缀改为zip解压后则是一个存储着不同分组的表情包的目录
+该文件用于配置分组目录下的EmotionConfig.json文件
+手动任意文件名的创建含有'shortCut', 'meaning', 'originalFile'三个列的xls或xlsx表格，根据该文件生成EmotionConfig.json文件
+'''
+
 import os
 import json
 import pandas as pd
@@ -33,7 +39,7 @@ def validate_excel(df, strictness=1):
             exit(1)
 
 def manage_config_json(directory, mode='new', strictness=1):
-    """管理config.json文件"""
+    """管理EmotionConfig.json文件"""
 
     # 判断directory变量是否为空
     if not directory:
@@ -91,23 +97,23 @@ def manage_config_json(directory, mode='new', strictness=1):
     print(f"成功生成 {config_path}")
     return True
 
-def json_to_xlsx(output_path='output.xlsx'):
-    """将config.json保存为xlsx文件"""
+# def json_to_xlsx(output_path='output.xlsx'):
+#     """将config.json保存为xlsx文件"""
 
-    # json_path默认为当前目录下的文件
-    json_path = os.path.join(os.getcwd(), 'EmotionConfig.json')  # 使用完整路径
+#     # json_path默认为当前目录下的文件
+#     json_path = os.path.join(os.getcwd(), 'EmotionConfig.json')  # 使用完整路径
 
-    # 判断json_path是否存在
-    if not os.path.exists(json_path):
-        print(f"文件 {json_path} 不存在")
-        return None
+#     # 判断json_path是否存在
+#     if not os.path.exists(json_path):
+#         print(f"文件 {json_path} 不存在")
+#         return None
     
-    # 读取JSON文件内容
-    with open(json_path, 'r') as file:
-        data = json.load(file)
+#     # 读取JSON文件内容
+#     with open(json_path, 'r') as file:
+#         data = json.load(file)
     
-    df = pd.DataFrame(data)
-    df.to_excel(output_path, index=False)
+#     df = pd.DataFrame(data)
+#     df.to_excel(output_path, index=False)
 
 
 def compress_to_emo(directory, file_name, output_filename="CustomEmo"):
@@ -162,18 +168,118 @@ def compress_to_emo(directory, file_name, output_filename="CustomEmo"):
     print(f"成功创建 {emo_filename}")
 
 
-dir_path = r'C:\Users\kan\Desktop\全部表情包'
-group_name = 'test'
+def json_to_xlsx(json_path, output_path=None):
+    """将指定的JSON文件内容转换为XLSX文件"""
+    
+    # 如果没有提供输出路径，则默认使用JSON文件所在目录
+    if not output_path:
+        output_path = os.path.dirname(json_path)
+    
+    # 确保输出路径存在
+    os.makedirs(output_path, exist_ok=True)
+    
+    # 构造输出文件路径
+    output_file = os.path.join(output_path, 'output.xlsx')
+    
+    # 读取JSON文件
+    with open(json_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    
+    processed_data = []
+    seen_files = set()
+    
+    for key, value in data.items():
+        # 检查key是否包含中文字符
+        if any('\u4e00' <= char <= '\u9fff' for char in key):
+            continue
+        
+        # 获取文件名和扩展名
+        filename = os.path.basename(value)
+        name, ext = os.path.splitext(filename)
+        
+        # 只保留jpg和png格式的文件，并且检查是否重复
+        if ext.lower() in ('.jpg', '.png') and filename not in seen_files:
+            seen_files.add(filename)
+            processed_data.append({
+                'shortCut': f'i{key}',  # 在key前面加上字母i
+                'meaning': name,        # 去除文件格式后的value
+                'originalFile': filename  # 只保留文件名和格式
+            })
+    
+    # 创建DataFrame并保存为Excel文件
+    df = pd.DataFrame(processed_data)
+    df.to_excel(output_file, index=False)
+    print(f"成功创建 {output_file}")
 
-print("开始执行")
-success_flag = manage_config_json(f'{dir_path}\\{group_name}', mode='new', strictness=2)
-if success_flag:
-    # 从后往前查找最后一个反斜杠的索引
-    last_backslash_index = dir_path.rfind('\\')
+import shutil
 
-    # 如果找到了反斜杠
-    if last_backslash_index != -1:
-        # 使用切片分别获取路径的两部分
-        part1 = dir_path[:last_backslash_index]  # 反斜杠之前的部分
-        part2 = dir_path[last_backslash_index + 1:]  # 反斜杠之后的部分
-        compress_to_emo(part1, part2, output_filename="CustomEmo")
+def copy_json_files(json_path, target_dir):
+    """将JSON中的文件复制到指定目录"""
+    
+    # 确保目标目录存在
+    os.makedirs(target_dir, exist_ok=True)
+    
+    # 读取JSON文件
+    with open(json_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    
+    seen_files = set()
+    failed_copies = []
+
+    for key, value in data.items():
+        # 检查key是否包含中文字符
+        if any('\u4e00' <= char <= '\u9fff' for char in key):
+            continue
+        
+        # 获取文件名和扩展名
+        filename = os.path.basename(value)
+        name, ext = os.path.splitext(filename)
+        
+        # 只保留jpg和png格式的文件，并且检查是否重复
+        if ext.lower() in ('.jpg', '.png') and filename not in seen_files:
+            seen_files.add(filename)
+            source_file = Path(value)
+            
+            try:
+                if source_file.exists():
+                    shutil.copy2(source_file, target_dir)
+                else:
+                    failed_copies.append(str(source_file))
+            except Exception as e:
+                failed_copies.append(str(source_file))
+                print(f"拷贝失败: {source_file}, 错误信息: {e}")
+    
+    if failed_copies:
+        print("以下文件拷贝失败:")
+        for failed_copy in failed_copies:
+            print(failed_copy)
+
+
+if __name__ == '__main__':
+
+    # 根据表格生成EmotionConfig.json文件
+    dir_path = r'C:\Users\kan\Desktop\全部表情包'
+    group_name = 'test'
+
+    print("开始执行")
+    # success_flag = manage_config_json(f'{dir_path}\\{group_name}', mode='new', strictness=2)
+    success_flag = False
+    if success_flag:
+        # 从后往前查找最后一个反斜杠的索引
+        last_backslash_index = dir_path.rfind('\\')
+
+        # 如果找到了反斜杠
+        if last_backslash_index != -1:
+            # 使用切片分别获取路径的两部分
+            part1 = dir_path[:last_backslash_index]  # 反斜杠之前的部分
+            part2 = dir_path[last_backslash_index + 1:]  # 反斜杠之后的部分
+            compress_to_emo(part1, part2, output_filename="CustomEmo")
+    
+
+    
+    # 将handles.json转换为output.xlsx文件
+    json_to_xlsx(r'D:\projects\auto_customer\config\hotstrings_cn.json')
+
+    
+    # 将handles.json中的文件复制到指定目录
+    # copy_json_files('C:\\path\\to\\your\\file.json', 'C:\\path\\to\\target\\folder')
