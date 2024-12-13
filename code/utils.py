@@ -333,7 +333,7 @@ if __name__ == '__main__':
     from_json = True  # 是否从JSON文件生成EmotionConfig.json文件
     compress_emo = True  # 是否压缩EmotionConfig.json文件为.emo文件
     copy_files = False  # 是否将EmotionConfig.json文件中的文件复制到指定目录
-    dir_path = r'C:\Users\A\Desktop\CustomEmo'  # 分组目录
+    dir_path = r'C:\work\CustomEmo'  # 分组目录
     group_name = 'CustomEmo'  # 分组名称
 
     success_flag = None # 检查是否成功标志变量 不要修改
