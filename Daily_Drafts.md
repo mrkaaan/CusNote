@@ -8,22 +8,52 @@
 Everything搜索结果的位置 支架、粘贴、等
 限制快捷键在指定软件生效 通过判断前置窗口
 
-https://detail.tmall.com/item.htm?id=731496692994&skuId=5065594748822
-
-亲亲，这个位置上下可以扭开的，里面有一个垫圈，可能里面原本的垫圈位移或变形了呢，您替换一个里面的垫圈（备用的垫圈在配件包里面），替换之后就不会漏水了呢，如果还有问题您再联系客服呢
 
 角阀水嘴安装
 
-这里下单付款呢亲（价格
 
 
 
-一、免钉胶怎么去除方法
+如何把cmd窗口放在小托盘
+如何使用cmd打开vscode并打开指定的项目文件夹 C:\note\customer_service_notes 
+打开两个vscode窗口 C:\note\python-WinGUI\
+这两个功能都加在运行autohotkey之前
 
-1、首先，我们可以使用吹风机来去除免钉胶。现在大家家里基本上都有吹风机，所以用这种方法处理起来是比较方便的，我们先将吹风机的状态调到热风，然后对准粘有免钉胶的地方吹上一段时间，等胶软化之后，我们就可以轻松地将其撕下来。
+cmd中的操作如果输入了很多命令，按下上下就能切换记录，但是如果是新打开的cmd窗口是没有的，如何让新打开的cmd窗口也有这个功能
+如何让cmd一进入后，直接按上键就能有记录
+比如我经常要做一个动作是 打开cmd 输入一条命令 python main.py
+我需要的效果是写一个bat，直接打开一个cmd窗口，我要的不是直接输入python main.py命令，而是有无办法把python main.py变成记录，我按下上就能
 
-2、我们还可以利用醋来去除免钉胶，这也是很简单的方法。在容器里倒上一些醋，然后用布浸湿，再在粘有免钉胶的地方擦拭一下，将其浸湿之后再用工具去除即可。但是利用醋的话，很有可能会弄脏墙面，所以这种方法适合在玻璃上使用。
+
+物流单号判断长度
+
+一定要把手拍照
 
 
 
- 21号开始潮州仓库开始主发中通，韵达辅助
+
+为什么打开了两个cmd窗口
+第一个窗口内容
+AutoHotkey started successfully.
+Directory changed successfully.
+
+
+[main 2024-12-23T05:11:11.550Z] update#setState idle
+(node:27004) [DEP0168] DeprecationWarning: Uncaught N-API callback exception detected, please run node with option --force-node-api-uncaught-exceptions-policy=true to handle those exceptions properly.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+
+第二个窗口内容
+Batch file path: C:\note\python-WinGUI\scripts\copy_clipboard.bat
+Hotstrings file name: hotstrings_cn.json
+快捷键监听已启动，按下 Shift+Ctrl+E 退出
+
+
+
+
+
+亲亲，为了确保我们发出的配件与您的水龙头完美匹配，我们需要看到水龙头把手的实物照片。订单截图虽然方便，但它无法提供足够的细节来确认型号。您的把手照片能帮助我们更准确地识别和匹配正确的配件。
+
+亲亲，需要水龙头把手的照片，是因为每个型号的细节都有细微差别，只有照片才能能让我们确认不同的型号，确保发出的配件100%适配。订单截图无法提供这些关键信息，所以麻烦您拍一下实物照片，这样我们能更快地为您处理。
+
+
+
