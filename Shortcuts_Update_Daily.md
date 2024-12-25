@@ -898,3 +898,26 @@ bq45 发错漏发核实
 wtt7 卡箍作用 forget
 
 wnsz 上一个万能接头的水嘴卡在水管上 forget
+
+pre-sale 售前
+pres 售前话术
+
+brand 品牌包装游戏
+
+jtt5 -> jtt2
+
+jtt3 仅退款的钱平台后面到账
+
+del llw23
+wnn23+ 有螺纹用转接头 没有螺纹问万能接头
+
+llw2 取不下来用万能接头安装
+
+llw4 转接头都用不了只能用万能接头
+
+zll4 change 质量好想要退给红包
+
+tgg4 下单前看过材质了吗
+
+material 材质 
+mati1 D款弹芯材质
