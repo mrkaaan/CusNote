@@ -55,6 +55,17 @@ else
 ; 按下 Alt+D 打开顶顶
 !d::Run C:\Program Files (x86)\DingDing\DingtalkLauncher.exe
 
+
+; 打开返款表.xls
+!-:: ; Alt + - (减号)
+Run, "C:\work\refund_form.xls"
+return
+
+; 打开每日接待数据 24-12.xls
+!=:: ; Alt + = (等号)
+Run, "C:\work\receptionData\receptionData_24-12.xls"
+return
+
 ;---------------------打开网址-------------------------
 ;kimi
 ; Alt + k
@@ -130,13 +141,13 @@ return
 return
 
 ; Alt + ;
-; 打开潮州拆建群
+; 打开潮州拆件群
 !;::
     Run, https://www.kdocs.cn/l/cpIw6wSo327f
 return
 
 ; Alt + '
-; 打开深圳拆建群
+; 打开深圳拆件群
 !'::
     Run, https://www.kdocs.cn/l/cv9FaonW5wT8
 return
@@ -207,10 +218,10 @@ return
     PerformAction("jie-shou")
 return
 
-; 中通群
+; 潮州中通群
 ; Alt + NumPad del
-!NumPadDel::
-    PerformAction("zhongt")
+!NumPadDot::
+    PerformAction("dingh")
 return
 
 ; 总结快速打开企业微信指定群聊的键盘按键顺序规律：
@@ -229,3 +240,5 @@ return
 !]::
     PerformAction("maod")
 return
+
+

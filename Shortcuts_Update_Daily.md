@@ -921,3 +921,25 @@ tgg4 下单前看过材质了吗
 
 material 材质 
 mati1 D款弹芯材质
+
+-----
+  
+## 24/12/27
+
+tbb -> bb
+
+xdd 更新 点击“立即下单”按钮
+
+zjtt 23 转接头没发错是公差 是预留
+
+phh 有空拍  forget
+
+ltt -> tt
+
+lpp -> 怼上去pp 为什么怼ll
+
+jyy4 集运仓买别的一起发配件过去
+
+dff -> ff
+
+dgg -> dff
