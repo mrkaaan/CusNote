@@ -34,8 +34,19 @@ cmd中的操作如果输入了很多命令，按下上下就能切换记录，�
 
 
 
+写一个autohotkey脚本
+按下按下ctrl+空格后，自动按下alt+空额后自动输入搜索后自动回车
 
 
+Everything插件 
+everything toolbar
+powerToys run
 
 
+橙金【林间鹿】脸盆挂钩
 
+用吹风筒加热一下呢
+
+
+22外小 20内大
+发加长22外
