@@ -40,10 +40,13 @@ cmd中的操作如果输入了很多命令，按下上下就能切换记录，�
 
 Everything插件 
 everything toolbar
+
+windows插件
 powerToys run
 
 
-22外小 20内大
-发加长22外
 
-黑色招财猫面盆龙头（冷热）
+
+混水阀视频
+
+有水图片
