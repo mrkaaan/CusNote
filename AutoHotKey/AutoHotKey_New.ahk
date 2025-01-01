@@ -63,7 +63,7 @@ return
 
 ; 打开每日接待数据 24-12.xls
 !=:: ; Alt + = (等号)
-Run, "C:\work\receptionData\receptionData_24-12.xls"
+Run, "C:\work\receptionData\receptionData_25-1.xls"
 return
 
 ;---------------------打开网址-------------------------
@@ -82,25 +82,25 @@ return
 ;潮州仓库产品问题表
 ; Alt + NumPad1
 !NumPad1::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAab8WhsniTlGZuKlHLb?scode=ABsAQAckACEDQwCAKDAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFE7O6n1qdPQoOMG4A1o3?scode=ABsAQAckACEOqeS9shAUEAuAZzALA&tab=BB08J2
 return
 
 ; 潮州仓库快递问题表
 ; Alt + NumPad2
 !NumPad2::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAZx1ER04sSQ6Qrm9tTs?scode=ABsAQAckACEDNUGAiMAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEG5VXIRD9QXSC5EX85v?scode=ABsAQAckACEgP1NlcfAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad3
 ; 深圳仓库产品问题表
 !NumPad3::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAhN11AIAqTMKhce1b7C?scode=ABsAQAckACEsuVpBjOAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEmli8ZBjrRZ6c0gfVhD?scode=ABsAQAckACEG0fiqhRAUEAuAZzALA&tab=BB08J2
 return
 
 ; Alt + NumPad6
 ; 深圳仓库快递问题表
 !NumPad6::
-    Run, https://doc.weixin.qq.com/sheet/e3_AQkAHwZaABAMNA07VitSFqXPnAqKo?scode=ABsAQAckACE9NK1KnJAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEuVlSPqNXTu6pswqWLg?scode=ABsAQAckACENNCZwaSAUEAuAZzALA&tab=BB08J2
 return
 
 
