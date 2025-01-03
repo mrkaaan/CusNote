@@ -330,7 +330,7 @@ if __name__ == '__main__':
 
     # 以下为测试代码，请根据实际情况修改参数
     from_excel = False  # 是否从Excel文件生成EmotionConfig.json文件
-    from_json = True  # 是否从JSON文件生成EmotionConfig.json文件
+    from_json = True  # 检测EmotionConfig.json文件
     compress_emo = True  # 是否压缩EmotionConfig.json文件为.emo文件
     copy_files = False  # 是否将EmotionConfig.json文件中的文件复制到指定目录
     dir_path = r'C:\work\CustomEmo'  # 分组目录
