@@ -74,8 +74,8 @@ return
 return
 
 ;鲁班
-; Alt + NumPad0
-!NumPad0::
+; Alt + P
+!p::
     Run, https://order.lbdj.com/home/index
 return
 
@@ -221,7 +221,13 @@ return
 ; 潮州中通群
 ; Alt + NumPad del
 !NumPadDot::
-    PerformAction("dingh")
+    PerformAction("zhoucang-z")
+return
+
+; 潮州深圳群
+; Alt + NumPad del
+!!NumPad0::
+    PerformAction("zhencang-")
 return
 
 ; 总结快速打开企业微信指定群聊的键盘按键顺序规律：
