@@ -271,3 +271,17 @@ https://xiaoyi.vc/ms-pinyin-custom-phrase.html
 
 win10 批量导入微软输入法的用户自定义短语
 https://blog.csdn.net/Anenan/article/details/108736118
+
+TranslucentTB 
+资源：
+https://www.52pojie.cn/thread-1918955-1-1.html
+
+.msixbundle结尾文件运行显示：  应用安装程序无法安装应用包相关项。请向开发人员索要应用包
+https://www.zhihu.com/question/411518183
+https://cloud.tencent.com/developer/article/1662719
+
+WaaSMedicSvc修改权限提示： 无法保存对wuauserv权限所作的更改。拒绝访问。
+https://blog.csdn.net/weixin_53370274/article/details/125181926
+
+还是有问题：
+Vindows无法启动Vindows Update服务（位于本地计算机上）.错误1058：无法启动服务，原因可能是已被禁用或与其相关联的设备没有启动。
