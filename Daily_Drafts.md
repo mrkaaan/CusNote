@@ -70,3 +70,62 @@ powerToys run
 灵感 使用autohotkey获取当前互动页签的url（不知道能不能判断多浏览器同时开启的情况）
 https://blog.csdn.net/scy261983626/article/details/122817408
 
+
+204
+
+获取全部正在回话的
+document.querySelectorAll("[class$='online-touch-explorer-member-card_wrap']")
+
+
+数量
+online-touch-explorer-virtual-touch-list_subject
+
+online-touch-explorer-member-card_main
+
+online-touch-explorer-member-card_info
+
+online-touch-explorer-member-card_end-time
+
+总数量
+online-touch-explorer-closed-touch-list_collapsed
+的
+header
+的
+online-touch-explorer-closed-touch-list_number
+旁边
+
+document.querySelectorAll("[class$='online-touch-explorer-member-card_end-time']")
+这样获取到了元素，如果不用爬虫，能不能计数同时只计数文本内容为 时时:分分 格式的数量
+
+提示
+online-touch-explorer-member-card_tips
+
+online-touch-timer_container
+
+
+使用油猴脚本写出一个插件
+名称是 悉犀客服平台辅助工具
+版本是1.0
+作者是 mrkaan
+图标 https://img.alicdn.com/imgextra/i1/O1CN01jTINIC1hfHKD8epcF_!!6000000004304-2-tps-80-80.png
+描述是 提升使用悉犀客服平台的客服的使用体验，贴近千牛的使用习惯，正在开发中...
+作用的网页是 https://c2mbc.service.xixikf.cn/im-desk  以及用作测试的 http://127.0.0.1:5500/code/test.html  （使用match做好*的通配）
+
+功能：
+1. 进入对应网站的提示 工具正在运行
+2. 拦截ctrl+W关闭窗口的操作，弹出提示框
+3. 判断某个元素是否存在（online-touch-timer_container,使用class$=），如果存在且里面有文本内容则弹出提示框，要一直检查，每隔3s检查一次
+4. 添加一个span 统计 document.querySelectorAll("[class$='online-touch-explorer-member-card_end-time']")
+这样获取到了元素，能不能计数同时只计数文本内容为 时时:分分 格式的数量
+放在
+online-touch-explorer-closed-touch-list_collapsed
+的
+header
+的
+online-touch-explorer-closed-touch-list_number
+右边
+上面的都是使用document.querySelectorAll("[class$='']")获取到的，原本的class太长了
+
+确保脚本在页面完全加载后执行
+
+使用 MutationObserver 监听页面动态变化

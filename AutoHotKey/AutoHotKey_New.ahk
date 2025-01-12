@@ -251,10 +251,10 @@ return
 
 ; 按下 Alt+W 代替 Win+1 ~ Win+5
 
-!w::  ; Alt + W
+!~::  ; Alt + ~
 {
-    ; 循环发送 Win + 1 至 Win + 5
-    Loop, 5
+    ; 循环发送 Win + 1 至 Win + 2
+    Loop, 2
     {
         ; 发送 Win 加上当前循环索引作为数字键
         Send, #{%A_Index%}
