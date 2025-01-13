@@ -52,6 +52,8 @@ else
 ; 按下 Alt+W 打开企业微信
 !q::Run C:\Program Files (x86)\WXWork\WXWork.exe
 
+XButton1::Run C:\Program Files (x86)\WXWork\WXWork.exe
+
 ; 按下 Alt+D 打开顶顶
 !d::Run C:\Program Files (x86)\DingDing\DingtalkLauncher.exe
 
@@ -247,19 +249,3 @@ return
     PerformAction("maod")
 return
 
-;---------------------打开企业微信的对应群组-------------------------
-
-; 按下 Alt+W 代替 Win+1 ~ Win+5
-
-!~::  ; Alt + ~
-{
-    ; 循环发送 Win + 1 至 Win + 2
-    Loop, 2
-    {
-        ; 发送 Win 加上当前循环索引作为数字键
-        Send, #{%A_Index%}
-        ; 等待一小段时间以确保每个组合键被正确处理 (可选)
-        Sleep, 100
-    }
-    return
-}

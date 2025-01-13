@@ -30,6 +30,8 @@
             document.getElementById('stopButton').disabled = false;
             document.getElementById('message').style.display = 'block';
             document.getElementById('message').textContent = `新消息`;
+            // 给message添加新类名
+            document.getElementById('message').classList.add('online-touch-timer_container');
 
         });
 
@@ -37,6 +39,8 @@
             document.getElementById('startButton').disabled = false;
             document.getElementById('stopButton').disabled = true;
             document.getElementById('message').style.display = 'none';
+            // 移除message的类名
+            document.getElementById('message').classList.remove('online-touch-timer_container');
             seconds = 0;
         });
 
