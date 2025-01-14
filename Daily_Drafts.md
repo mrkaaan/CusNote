@@ -115,11 +115,10 @@ online-touch-timer_container
 
 功能：
 1. 进入对应网站的提示 工具正在运行
-2. 拦截ctrl+W关闭窗口的操作，弹出提示框
-3. 判断某个元素是否存在（online-touch-timer_container,使用class$=），如果存在且里面有文本内容则使用Notification通知，要一直检查，每隔3s检查一次
+2. 判断某个元素是否存在（online-touch-timer_container,使用class$=），如果存在且里面有文本内容则使用Notification通知，要一直检查，每隔3s检查一次
 title 为 淘工厂新消息，body为淘工厂有一条新消息尽快回复 (๑´ㅂ`๑) 
 不需要icon和image，左上角图标使用默认不用设置，tag为‘淘工厂新消息提示’，已经显示过相同 tag 的通知也会再次提醒用户，通知会发出声音
-4. 添加一个span 统计 document.querySelectorAll("[class$='online-touch-explorer-member-card_end-time']")
+3. 添加一个span 统计 document.querySelectorAll("[class$='online-touch-explorer-member-card_end-time']")
 这样获取到了元素，能不能计数同时只计数文本内容为 时时:分分 格式的数量
 放在
 online-touch-explorer-closed-touch-list_collapsed （已存在元素）
@@ -129,7 +128,17 @@ header （已存在元素）
 online-touch-explorer-closed-touch-list_number （已存在元素）
 的右边
 上面的都是使用document.querySelectorAll("[class$='']")获取到的，原本的class太长了
+鼠标悬浮在新添加的元素上显示文字“辅助工具添加元素 - 今日接待人数统计”
 
 确保脚本在页面完全加载后执行
 监听页面动态变化
 使用 MutationObserver 监听页面动态变化
+保证功能2和3不仅监听页面变化时执行，也定时检查每3秒一次都
+
+
+
+添加一个功能：鼠标悬浮在新添加的元素上显示文字“辅助工具添加元素 - 今日接待人数统计”
+
+
+
+您称重或者打磨外壳试一下哈

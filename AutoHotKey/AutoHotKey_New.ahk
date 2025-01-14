@@ -51,8 +51,7 @@ else
 
 ; 按下 Alt+W 打开企业微信
 !q::Run C:\Program Files (x86)\WXWork\WXWork.exe
-
-XButton1::Run C:\Program Files (x86)\WXWork\WXWork.exe
+return
 
 ; 按下 Alt+D 打开顶顶
 !d::Run C:\Program Files (x86)\DingDing\DingtalkLauncher.exe
