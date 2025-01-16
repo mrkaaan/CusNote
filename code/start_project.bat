@@ -16,10 +16,10 @@ set "PYTHON_FILE_NAME=main.py"
 
 :: 使用/B保证按下ctrl+c后CMD窗口不会关闭
 :: 打开VSCode并打开指定的项目文件夹
-start /B "" "%VSCODE_PATH%" "C:\note\customer_service_notes"
+:: start /B "" "%VSCODE_PATH%" "C:\note\customer_service_notes"
 
 :: 打开VSCode窗口，打开另一个项目文件夹
-start /B "" "%VSCODE_PATH%" "C:\note\python-WinGUI\"
+:: start /B "" "%VSCODE_PATH%" "C:\note\python-WinGUI\"
 
 :: 运行AutoHotkey脚本
 start /B "" "%AHK_PATH%" "%SCRIPT_NAME%"
