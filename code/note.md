@@ -261,7 +261,7 @@ Node.js后端服务器：负责接收来自各个浏览器扩展的内容脚本�
 - 导入只会读取分组文件夹下的图片、config.json文件的shortCut、meaning、originalFile其他都可以删
 - originalFile 字段唯一 如果需要多个图片则需要修改图片名称(如果不修改则后续相同的不会导入)
 
-# -------
+## 微软输入法
 
 win10 微软输入法的简繁切换
 https://www.zhihu.com/question/38400073
@@ -272,7 +272,8 @@ https://xiaoyi.vc/ms-pinyin-custom-phrase.html
 win10 批量导入微软输入法的用户自定义短语
 https://blog.csdn.net/Anenan/article/details/108736118
 
-TranslucentTB 
+## TranslucentTB 
+
 资源：
 https://www.52pojie.cn/thread-1918955-1-1.html
 
@@ -285,3 +286,66 @@ https://blog.csdn.net/weixin_53370274/article/details/125181926
 
 还是有问题：
 Vindows无法启动Vindows Update服务（位于本地计算机上）.错误1058：无法启动服务，原因可能是已被禁用或与其相关联的设备没有启动。
+
+## 插件
+
+Everything插件 
+everything toolbar
+
+windows插件
+powerToys run
+
+
+灵感 使用autohotkey获取当前互动页签的url（不知道能不能判断多浏览器同时开启的情况）
+https://blog.csdn.net/scy261983626/article/details/122817408
+
+
+## 浏览器插件开发指令
+
+根据类名尾缀获取元素
+document.querySelectorAll("[class$='']")
+
+今日已完结回话标志 格式为 时时:分分
+online-touch-explorer-member-card_end-time
+
+进线倒计时
+online-touch-timer_container
+
+总数量
+online-touch-explorer-closed-touch-list_collapsed
+的
+header
+的
+online-touch-explorer-closed-touch-list_number
+旁边
+
+
+使用浏览器拓展写一个插件
+名称是 悉犀客服平台辅助工具
+版本是1.0
+作者是 mrkaan
+图标 https://img.alicdn.com/imgextra/i1/O1CN01jTINIC1hfHKD8epcF_!!6000000004304-2-tps-80-80.png
+描述是 提升使用悉犀客服平台的客服的使用体验，贴近千牛的使用习惯，正在开发中...
+作用的网页是 https://c2mbc.service.xixikf.cn/im-desk  以及用作测试的 http://127.0.0.1:5500/code/test.html  （使用match做好*的通配）
+
+功能：
+1. 进入对应网站的提示 工具正在运行
+2. 判断某个元素是否存在（online-touch-timer_container,使用class$=），如果存在且里面有文本内容则使用Notification通知，要一直检查，每隔3s检查一次
+title 为 淘工厂新消息，body为淘工厂有一条新消息尽快回复 (๑´ㅂ`๑) 
+不需要icon和image，左上角图标使用默认不用设置，tag为‘淘工厂新消息提示’，已经显示过相同 tag 的通知也会再次提醒用户，通知会发出声音
+3. 添加一个span 统计 document.querySelectorAll("[class$='online-touch-explorer-member-card_end-time']")
+这样获取到了元素，能不能计数同时只计数文本内容为 时时:分分 格式的数量
+放在
+online-touch-explorer-closed-touch-list_collapsed （已存在元素）
+的
+header （已存在元素）
+的
+online-touch-explorer-closed-touch-list_number （已存在元素）
+的右边
+上面的都是使用document.querySelectorAll("[class$='']")获取到的，原本的class太长了
+鼠标悬浮在新添加的元素上显示文字“辅助工具添加元素 - 今日接待人数统计”
+
+确保脚本在页面完全加载后执行
+监听页面动态变化
+使用 MutationObserver 监听页面动态变化
+保证功能2和3不仅监听页面变化时执行，也定时检查每3秒一次都

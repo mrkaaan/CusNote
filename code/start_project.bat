@@ -22,7 +22,7 @@ set "PYTHON_FILE_NAME=main.py"
 :: start /B "" "%VSCODE_PATH%" "C:\note\python-WinGUI\"
 
 :: 运行AutoHotkey脚本
-start /B "" "%AHK_PATH%" "%SCRIPT_NAME%"
+:: start /B "" "%AHK_PATH%" "%SCRIPT_NAME%"
 
 :: 使用/k保证按下ctrl+c后CMD窗口不会关闭
 :: 激活Conda环境并运行Python文件，保持CMD窗口打开
