@@ -31,3 +31,32 @@ tk的两个窗口融合
 防溅头材质
 防溅头重量
 桌面文件整理
+
+
+在开发浏览器插件的时候，如果我想要给某个在线聊天的网页添加一个提示功能，这个提示功能包括但不限于这些功能：新消息进线会有一个弹窗出现、弹窗不是浏览器窗口、弹窗脱离浏览器存在、弹窗窗口置顶、新消息显示在弹窗中（包含具体信息哪个浏览器、哪个页签、进线的用户、已经进线的计时）、每进线一人弹窗中便多一条消息、每回复一人弹窗中对应的消息并消失、按下设定好的快捷键即跳转到/置顶并聚焦最新进线的消息所在的浏览器的对应页签。这些功能如果使用浏览器本身的js和html会有很多功能实现不了，如果使用Native Messaging技术，是不是可以在有新消息进线和被回复时与本地工具沟通，用本地工具实现这些功能
+
+在开发浏览器插件的时候，需要与本地的Electron程序通信，为了探究如何通信，我需要你实现这样一个功能，使用插件给当前页面添加一个输入框和一个按钮，按下按钮后，获取输入框中的内容，并将内容发送给Electron程序，Electron程序收到内容后，将内容显示在页面上
+
+浏览器插件的环境已经配置完毕，electron的环境也配置完毕，现在需要实现插件与electron的通信，请问有什么好的实践方法吗？
+
+下面有一篇文章可以参考一下，你认为用那种方式最好，先选用一种最简单的方式完成现在的这次demo，然后再考虑其他方案
+参考实例：https://juejin.cn/post/6996918509338886180
+
+输入框和按钮已经实现:
+// 创建输入框并设置类名
+const input = document.createElement('input');
+input.className = 'electron-input';
+
+// 创建按钮并设置类名
+const button = document.createElement('button');
+button.className = 'electron-button';
+button.innerText = 'Send to Electron';
+
+// 添加按钮点击事件监听器
+button.addEventListener('click', () => {
+    const data = input.value;
+});
+
+// 将输入框和按钮添加到#electronTestBox
+electronTestBox.appendChild(input);
+electronTestBox.appendChild(button);
