@@ -60,3 +60,19 @@ button.addEventListener('click', () => {
 // 将输入框和按钮添加到#electronTestBox
 electronTestBox.appendChild(input);
 electronTestBox.appendChild(button);
+
+
+完整进线回话结构
+<div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_content"><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_info"><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_username" data-xreplay-desensitized-name="true" data-spm-anchor-id="0.0.0.i3.72ec7b96QhS47a">徐**7</div><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_tags"><span role="img" class="xixi-icon xixi-icon-mobile-o" style="color: var(--primary-color);"><svg width="1em" height="1em" fill="currentColor" focusable="false" aria-hidden="true"><use href="#xixi-icon-mobile-o"></use></svg></span><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_mask"></div></div></div><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_tips"><div class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-tao-factory-online-touch-explorer-member-card_message">在呢亲</div><div><span class="xixikf-c-2-mbc-im-desk-extension_tao-factory-im-desk-components-online-touch-timer_container"></span></div></div></div>
+
+
+订单切换按钮的display
+<div class="xixikf-biztarget-selector_components-biz-header_container" style="
+    display: block;
+"><div class="xixikf-biztarget-selector_components-biz-header_label">会员咨询的订单</div><div class="xixikf-biztarget-selector_components-biz-header_commands"><button data-component-id="xixi-design://button" tabindex="0" data-c-l-i="com.xixikf.imdesk.IMDeskApp>Plugin>com.xixikf.presale.applications.C2mbcBizTargetSelector/click-swap-to-biz-target-list-button" aria-label="点击修改咨询对象按钮" data-c-l-v="iBm_3LWW>lM2z6QXE/_" type="button" class="ant4-btn ant4-btn-default ant4-btn-icon-only xixi-button"><span role="img" class="xixi-icon xixi-icon-swap-o"><svg width="1em" height="1em" fill="currentColor" focusable="false" aria-hidden="true"><use href="#xixi-icon-swap-o"></use></svg></span></button></div></div>
+
+
+广东省发货的呢，默认韵达快递。发货后省内一般是1-2天，省外的话3-4天左右的呢，具体看快递时效的亲爱的这边无法包快递保证的呢。运输路途上会给您多加催促的哦~~~
+
+2号淘工厂
+数显水龙头 深圳发
