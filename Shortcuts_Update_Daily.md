@@ -1050,3 +1050,33 @@ copper 防溅头是铜的
 ## 25/1/18
 
 hhh 换货
+
+-----
+  
+## 25/1/22
+
+btt 背贴价格
+
+ssq 售前话术 change
+
+wee 不用退回 change
+
+cnn 你测什么呢
+
+kzi 卡主 forget
+
+xxj2 皂液器开孔 forget
+xxj3 置物架白色的胶套
+xxj45 直接拔下来泵头
+
+tgfg 淘工厂前台链接
+tgbg 淘工厂后台链接
+
+tgfgn 淘工厂前台账号
+tgfgp 淘工厂前台密码
+
+tgbgn 淘工厂后台账号
+tgbgp 淘工厂后台密码
+
+tgn 淘工厂前台用户名
+tgnn 淘工厂店铺名称

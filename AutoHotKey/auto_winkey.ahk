@@ -4,6 +4,8 @@
 ; Alt 的符号是 ! 
 ; Shift 的符号是 + 
 ; Win 的符号是#
+; XButton1 鼠标侧键2
+; XButton2 鼠标侧键1
 
 ; 按下 Alt+Q 代替 Win+1 ~ Win+5
 
