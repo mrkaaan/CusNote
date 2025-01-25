@@ -349,3 +349,12 @@ online-touch-explorer-closed-touch-list_number （已存在元素）
 监听页面动态变化
 使用 MutationObserver 监听页面动态变化
 保证功能2和3不仅监听页面变化时执行，也定时检查每3秒一次都
+
+
+## 定位到表格最后一行 
+
+ctrl+下
+
+
+## Windows下还原指定格式文件的图标为默认图标
+https://jingyan.baidu.com/article/6fb756ec92cb11241858fb16.html
