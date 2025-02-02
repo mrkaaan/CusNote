@@ -30,6 +30,8 @@ else
 ; Alt 的符号是 ! 
 ; Shift 的符号是 + 
 ; Win 的符号是#
+; XButton1 鼠标侧键2
+; XButton2 鼠标侧键1
 
 ;---------------------打开文件夹-------------------------
 ;不能用数字键盘的数字，要用主键盘的数字。
@@ -83,25 +85,25 @@ return
 ;潮州仓库产品问题表
 ; Alt + NumPad1
 !NumPad1::
-    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFE7O6n1qdPQoOMG4A1o3?scode=ABsAQAckACEOqeS9shAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEoRKGJKESTD2gNcoPAI?scode=ABsAQAckACEaCbmkfKAUsAbwZgAFE
 return
 
 ; 潮州仓库快递问题表
 ; Alt + NumPad2
 !NumPad2::
-    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEG5VXIRD9QXSC5EX85v?scode=ABsAQAckACEgP1NlcfAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEola9qXXFTaywbpGD1q?scode=ABsAQAckACEZaC0HkuAUsAbwZgAFE
 return
 
 ; Alt + NumPad3
 ; 深圳仓库产品问题表
 !NumPad3::
-    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEmli8ZBjrRZ6c0gfVhD?scode=ABsAQAckACEG0fiqhRAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEguaizH1gQmW1L8hf6c?scode=ABsAQAckACE6orJju3AUsAbwZgAFE
 return
 
 ; Alt + NumPad6
 ; 深圳仓库快递问题表
 !NumPad6::
-    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEuVlSPqNXTu6pswqWLg?scode=ABsAQAckACENNCZwaSAUEAuAZzALA&tab=BB08J2
+    Run, https://doc.weixin.qq.com/sheet/e3_AUsAbwZgAFEwA2M8TidQqWM5J1VFG?scode=ABsAQAckACESSTlgJIAUsAbwZgAFE
 return
 
 
@@ -248,3 +250,14 @@ return
     PerformAction("maod")
 return
 
+; 鼠标侧键2
+XButton1::
+    Send, {Ctrl down}{Shift down}{Alt down}m{Alt up}{Shift up}{Ctrl up}
+return
+
+; 鼠标侧键1
+XButton2::
+    Send, {LWin down}{T}{LWin up}  ; 模拟按下 Win+T
+    Sleep, 10  ; 延迟10毫秒
+    Send, ^{NumpadMult}  ; 模拟按下 Ctrl + 小键盘上的 *
+return
