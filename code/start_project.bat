@@ -8,10 +8,10 @@ set "VSCODE_PATH=C:\Users\A\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 set "AHK_PATH=C:\software\AutoHotKey_cn\AutoHotKey\AutoHotkey.exe"
 
 :: 设置脚本变量
-set "SCRIPT_NAME=C:\note\customer_service_notes\AutoHotKey\AutoHotKey_New.ahk"
+set "SCRIPT_NAME=C:\note\CusNote\AutoHotKey\AutoHotKey_New.ahk"
 
 :: 设置Python项目目录和文件名
-set "PYTHON_PROJECT_DIR=C:\note\python-WinGUI\src"
+set "PYTHON_PROJECT_DIR=C:\note\CusAutoTool\src"
 set "PYTHON_FILE_NAME=main.py"
 
 :: 使用/B保证按下ctrl+c后CMD窗口不会关闭
@@ -19,7 +19,7 @@ set "PYTHON_FILE_NAME=main.py"
 :: start /B "" "%VSCODE_PATH%" "C:\note\customer_service_notes"
 
 :: 打开VSCode窗口，打开另一个项目文件夹
-:: start /B "" "%VSCODE_PATH%" "C:\note\python-WinGUI\"
+:: start /B "" "%VSCODE_PATH%" "C:\note\CusAutoTool\"
 
 :: 运行AutoHotkey脚本
 :: start /B "" "%AHK_PATH%" "%SCRIPT_NAME%"
