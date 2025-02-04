@@ -135,3 +135,4 @@ ERP处理输入框内容异常：Expecting property name enclosed in double quot
 # 暂存笔记 / 疑惑 / 需求
 
 
+亲，我们默认发韵达快递，以发出后快递为准哦，暂不支持指定快递~仓库会根据您的地址选择合适的快递的呢。
