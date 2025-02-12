@@ -134,3 +134,6 @@ ERP处理输入框内容异常：Expecting property name enclosed in double quot
 
 # 暂存笔记 / 疑惑 / 需求
 
+一般龙头都是22的通用的，您不放心可以现在测量一下，如果不是22的给您送转接头
+
+SL银色圆柱短款（两档）
