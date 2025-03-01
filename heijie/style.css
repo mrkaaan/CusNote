@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size:15px;
+}
+
+.article{
+  padding-left:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.passage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* 允许换行 */
+  gap: 12px; /* 字与字之间的间距 */
+}
+
+.word {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 25px;
+  /* height: 60px;  */
+  /* border: 1px solid #ddd;  */
+  /* padding: 4px;  */
+}
+
+.point ,
+.symbol {
+  display: none;
+  /* display: flex; */
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 25px;
+}
+
+rb, rt {
+  text-align: center;
+}
+
+rt {
+  font-size: 0.7em;
+  color: #666;
+}
